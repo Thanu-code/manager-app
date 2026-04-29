@@ -6,6 +6,9 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.get('/', (req, res) => {
+  res.send('Menu Management API is running 🚀');
+});
 // Middleware
 app.use(cors());
 app.use(express.json());
